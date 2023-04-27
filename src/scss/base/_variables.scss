@@ -1,0 +1,30 @@
+// Font Headings
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+$fontH: 'Poppins', sans-serif;
+
+// Font Body
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+$fontB: 'Open Sans', sans-serif;
+
+// Weights
+$regular: 400;
+$semiBold: 600;
+$bold: 700;
+
+// Reponsive Desing
+$mobile: 375px;
+$mobile-max: 767px;
+$desktop: 1440px;
+$desktop-min: 768px;
+
+// Colors
+
+    // Primary Colors
+
+$pink: hsl(322, 100%, 66%);
+$lightPink: hsl(321, 100%, 78%);
+$lightRed: hsl(0, 100%, 63%);
+
+    // Neutral Colors
+$veryDarkCyan: hsl(192, 100%, 9%);
+$veryPaleBlue: hsl(207, 100%, 98%);

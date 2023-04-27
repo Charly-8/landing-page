@@ -1,0 +1,54 @@
+// Globals
+
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-family: v.$fontB;
+    font-size: 1.4rem;
+    font-weight: v.$regular;
+    color: v.$veryDarkCyan;
+    line-height: 2rem;
+}
+
+h1 {
+    font-family: v.$fontH;
+    color: v.$veryDarkCyan;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main {
+    max-width: 100%;
+}
+
+.gt__background--top,
+.gt__background--bottom,
+.yu__background--top,
+.yu__background--bottom,
+.footerdsg__background--top {
+    max-width: 100%;
+}

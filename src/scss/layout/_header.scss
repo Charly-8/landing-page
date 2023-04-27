@@ -1,0 +1,48 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5rem;
+    width: 100%;
+
+    &__img {
+
+        @include m.mobile {
+            width: 10rem;
+            margin-left: 2rem;
+        }
+
+        @include m.desktop {
+            margin-left: 6rem;
+        }
+        
+    }
+
+    &__link {
+        font-family: v.$fontB;
+        font-weight: v.$semiBold;
+        color: v.$lightPink;
+        border: .2rem solid v.$lightPink;
+        border-radius: 5rem;
+        text-align: center;
+
+        @include m.mobile {
+            font-size: 1rem;
+            margin-right: 2rem;
+            padding: .5rem;
+            width: 9rem;
+            border: .1rem solid v.$lightPink;
+        }
+
+        @include m.desktop {
+            width: 14rem;
+            height: 4rem;
+            line-height: 0;
+            padding: 2rem;
+            margin-right: 6rem;
+        }
+    }
+}

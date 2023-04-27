@@ -1,0 +1,185 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+
+.community {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    @include m.mobile {
+        padding-top: 10rem;
+        width: 100%;
+    }
+
+
+    &__title {
+        margin-bottom: 3rem;
+        
+        @include m.mobile {
+            line-height: 4rem;
+            max-width: 38rem;
+        }
+
+        @include m.desktop {
+            margin-top: 16rem;
+            font-size: 3.5rem;
+        }
+    }
+
+    &__txt {
+        width: 45rem;
+        line-height: 2rem;
+
+        @include m.mobile {
+            max-width: 30rem;
+            margin-bottom: 6rem;
+        }
+
+        @include m.desktop {
+            max-width: 43rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__link {
+        
+        @include m.link;
+
+        @include m.mobile {
+            padding: 1rem 4rem;
+        }
+
+        @include m.desktop {
+            padding: 1.5rem 7rem;
+        }
+    }
+
+    &__img {
+        margin-top: 8rem;
+
+        @include m.mobile {
+            max-width: 80%;
+            margin-bottom: 15rem;
+        }
+
+        @include m.desktop {
+            max-width: 80rem;
+            margin-bottom: 8rem;
+        }
+
+    }
+}
+
+.stadistics {
+
+    @include m.mobile  {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include m.desktop {
+        @include m.grid(2, 0);
+        width: 80rem;
+    }
+}
+
+.blockone {
+
+    @include m.mobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include m.desktop {
+        margin-left: 4rem;
+    }
+
+    &__img {
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 4rem;
+
+        @include m.mobile {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__title1 {
+        display: flex;
+        justify-items: flex-start;
+        align-items: flex-start;
+        font-size: 6rem;
+        margin-bottom: 4rem;
+
+        @include m.desktop {
+            grid-column: 1 / 2;
+        }
+    }
+
+    &__txt1 {
+        display: flex;
+        justify-items: flex-start;
+        align-items: flex-start;
+        color: grey;
+        padding-bottom: 8rem;
+
+        @include m.mobile {
+            font-weight: v.$semiBold;
+        }
+    }
+}
+
+.blocktwo {
+    display: flex;
+    flex-direction: column;
+
+    @include m.desktop {
+        margin-left: 10rem;
+    }
+
+    &__img {
+        margin-bottom: 4rem;
+        display: flex;
+        align-self: flex-start;
+
+        @include m.mobile {
+            width: 3rem;
+            height: 3rem;
+        }
+    }
+
+    &__title2 {
+        display: flex;
+        justify-items: flex-start;
+        font-size: 5rem;
+        margin-bottom: 4rem;
+
+        @include m.desktop {
+            grid-column: 2 / 3;
+            font-size: 6rem;
+        }
+    }
+
+    &__txt2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: v.$semiBold;
+        color: grey;
+
+        @include m.desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            grid-column: 2 / 3;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Mixins 
+
+@use 'variables' as v;
+
+@mixin mobile {
+    @media (max-width: v.$mobile-max) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: v.$desktop-min) {
+        @content;
+    }
+}
+
+@mixin grid ($columns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin link {
+    background-color: v.$pink;
+    color: #FFFFFF;
+    font-weight: v.$semiBold;
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.14);
+    border-radius: 5rem;
+    padding: 2rem 5rem;
+}
+
+@mixin inputdesktop {
+    @media (min-width: v.$desktop-min) and (max-width: 995px) {
+        @content;
+    }
+}
